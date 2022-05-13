@@ -31,14 +31,6 @@
                 </li>
 
                 <li
-                    class="sidebar-item {{ Request::segment(1) == 'profil' ? 'active' : '' }} ">
-                    <a href="{{url('/profil')}}" class='sidebar-link'>
-                        <i class="bi bi-grid-fill"></i>
-                        <span>Profil</span>
-                    </a>
-                </li>
-
-                <li
                     class="sidebar-item  has-sub">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-stack"></i>
