@@ -22,3 +22,9 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard.index');
 });
+Route::get('/qrcode', function () {
+    return view('dashboard.index');
+});
+Route::get('/cetaksbp', function () {
+    return view('dashboard.index');
+});

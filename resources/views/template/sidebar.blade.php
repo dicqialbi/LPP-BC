@@ -25,7 +25,7 @@
                 <li
                     class="sidebar-item {{ Request::segment(1) == 'dashboard' ? 'active' : '' }} ">
                     <a href="{{url('/dashboard')}}" class='sidebar-link'>
-                        <i class="bi bi-grid-fill"></i>
+                        <i class="bi bi-speedometer"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
@@ -33,27 +33,27 @@
                 <li
                     class="sidebar-item  has-sub">
                     <a href="#" class='sidebar-link'>
-                        <i class="bi bi-stack"></i>
-                        <span>Components</span>
+                        <i class="bi bi-clipboard-data-fill"></i>
+                        <span>Data Tangkapan</span>
                     </a>
                     <ul class="submenu ">
                         <li class="submenu-item ">
-                            <a href="component-alert.html">Alert</a>
+                            <a href="component-alert.html">Data</a>
                         </li>
                         <li class="submenu-item ">
-                            <a href="component-badge.html">Badge</a>
+                            <a href="component-badge.html">Tambah Data</a>
                         </li>
 
                     </ul>
                 </li>
 
                 <li
-                    class="sidebar-item  has-sub">
-                    <a href="#" class='sidebar-link'>
-                        <i class="bi bi-collection-fill"></i>
-                        <span>Extra Components</span>
+                    class="sidebar-item {{ Request::segment(1) == 'cetaksbp' ? 'active' : '' }}">
+                    <a href="cetaksbp" class='sidebar-link'>
+                        <i class="bi bi-printer-fill"></i>
+                        <span>Cetak SBP</span>
                     </a>
-                    <ul class="submenu ">
+                    {{-- <ul class="submenu ">
                         <li class="submenu-item ">
                             <a href="extra-component-avatar.html">Avatar</a>
                         </li>
@@ -61,16 +61,16 @@
                             <a href="extra-component-sweetalert.html">Sweet Alert</a>
                         </li>
 
-                    </ul>
+                    </ul> --}}
                 </li>
 
                 <li
-                    class="sidebar-item  has-sub">
-                    <a href="#" class='sidebar-link'>
-                        <i class="bi bi-grid-1x2-fill"></i>
-                        <span>Layouts</span>
+                    class="sidebar-item {{ Request::segment(1) == 'qrcode' ? 'active' : '' }}">
+                    <a href="qrcode" class='sidebar-link'>
+                        <i class="bi bi-qr-code"></i>
+                        <span>QR Code</span>
                     </a>
-                    <ul class="submenu ">
+                    {{-- <ul class="submenu ">
                         <li class="submenu-item ">
                             <a href="layout-default.html">Default Layout</a>
                         </li>
@@ -86,7 +86,7 @@
                         <li class="submenu-item ">
                             <a href="layout-horizontal.html">Horizontal Menu</a>
                         </li>
-                    </ul>
+                    </ul> --}}
                 </li>
 
             </ul>

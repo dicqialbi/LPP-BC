@@ -2,12 +2,23 @@
 <body>
     <div id="app">
         @include('template.sidebar')
+        <header class="m-0 p-0">
+            {{-- <div class="pos-f-t">
+                <div class="collapse" id="navbarToggleExternalContent">
+                  <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                  </div>
+                </div>
+                <nav class="navbar navbar-dark bg-dark">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+            </div> --}}
+
+        </header>
         <div id="main">
-            <header class="mb-3">
-                <a href="#" class="burger-btn d-block d-xl-none">
-                    <i class="bi bi-justify fs-3"></i>
-                </a>
-            </header>
 
            @yield('content')
 
@@ -17,7 +28,12 @@
     <script src="{{ url('/')}}/assets/js/app.js"></script>
 
 <script src="{{ url('/')}}/assets/js/pages/dashboard.js"></script>
-
+<script>
+    var map = L.map('map', {
+    center: [51.505, -0.09],
+    zoom: 13
+    });
+</script>
 </body>
 
 
