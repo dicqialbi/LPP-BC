@@ -1,4 +1,5 @@
 @include('template.head')
+
 <body>
     <div id="app">
         @include('template.sidebar')
@@ -16,26 +17,23 @@
                   </button>
                 </nav>
             </div> --}}
-
         </header>
         <div id="main">
 
-           @yield('content')
+            @yield('content')
 
             @include('template.footer')
         </div>
     </div>
     <script src="{{ url('/')}}/assets/js/app.js"></script>
 
-<script src="{{ url('/')}}/assets/js/pages/dashboard.js"></script>
-<script>
-    var map = L.map('map', {
-    center: [51.505, -0.09],
-    zoom: 13
-    });
-</script>
+    <script src="{{ url('/')}}/assets/js/pages/dashboard.js"></script>
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+    </script>
 </body>
 
 
 <!-- Mirrored from zuramai.github.io/mazer/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 00:33:33 GMT -->
+
 </html>

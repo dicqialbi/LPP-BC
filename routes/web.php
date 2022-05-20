@@ -28,3 +28,9 @@ Route::get('/qrcode', function () {
 Route::get('/cetaksbp', function () {
     return view('dashboard.index');
 });
+Route::get('/view-data', function () {
+    return view('dashboard.index');
+});
+Route::get('/add-data', function () {
+    return view('dashboard.index');
+});
