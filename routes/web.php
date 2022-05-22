@@ -25,12 +25,9 @@ Route::get('/dashboard', function () {
 Route::get('/qrcode', function () {
     return view('dashboard.index');
 });
-Route::get('/cetaksbp', function () {
-    return view('dashboard.index');
+Route::get('/form', function () {
+    return view('template.form');
 });
-Route::get('/view-data', function () {
-    return view('dashboard.index');
-});
-Route::get('/add-data', function () {
-    return view('dashboard.index');
+Route::get('/data', function () {
+    return view('template.data');
 });

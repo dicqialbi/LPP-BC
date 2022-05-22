@@ -14,61 +14,54 @@
     <link rel="stylesheet" href="{{ url('/')}}/assets/css/pages/auth.css">
     <link rel="shortcut icon" href="{{ url('/')}}/assets/images/logo/favicon.svg" type="image/x-icon">
     <link rel="shortcut icon" href="{{ url('/')}}/assets/images/logo/favicon.png" type="image/png">
+    <style>
+        .dark{
+            background-color: #1E1E2D;
+        }
+        .whity{
+            background: #ffffff;
+            width: 80%;
+        }
+        .img-three{
+            width: 150px !important;
+        }
+
+        .logo-sigap{
+            width: 150px !important;
+            margin-right: 50px;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="row">
-        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
-            <div class="mt-5">
-                <img src="{{asset('assets/images/logo/logo.png')}}" alt="logo" class="m-auto" style="width:100%">
+<body class="dark">
+    <div class="row p-5 whity mt-5 m-auto">
+        <div class="col-6 d-flex align-items-center">
+            <img src="{{asset('assets/images/logo/logo.png')}}" class="logo-sigap mr-4">
+            <div class="ml-4">
+                <img src="{{asset('assets/images/logo/logo2.png')}}" class="img-three">
+                <p class="mt-2">Welcome to</p>
+                <h1 style="font-family: Roboto; font-size:50px">SIGAP</h1>
+                <p>Sistem informasi penindakan dan penangkapan</p>
             </div>
-
-            <div class="card card-primary">
-                <div class="card-header text-center">
-                    <h4>Login</h4>
-                </div>
-
-                <div class="card-body">
-                    <form method="POST" action="#" class="needs-validation" novalidate="">
-                        <div class="form-group">
-                            <label for="email">Username</label>
-                            <input id="email" type="email" class="form-control" name="email" tabindex="1" required=""
-                                autofocus="">
-                            <div class="invalid-feedback">
-                                Please fill in your Username
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="d-block">
-                                <label for="password" class="control-label">Password</label>
-                            </div>
-                            <input id="password" type="password" class="form-control" name="password" tabindex="2"
-                                required="">
-                            <div class="invalid-feedback">
-                                please fill in your password
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="float-right">
-                                <a href="auth-forgot-password.html" class="text-small">
-                                    Forgot Password?
-                                </a>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" name="remember" class="custom-control-input" tabindex="3"
-                                    id="remember-me">
-                                <label class="custom-control-label" for="remember-me">Remember Me</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-                                Login
-                            </button>
-                        </div>
-                    </form>
-                </div>
+        </div>
+        <div class="col-6 shadow p-4">
+            <div class="text-end">
+                <h2 class="fw-bold" style="font-family: 'Calibri' !important; font-size: 100px">Log in.</h2>
+                <p>Log in with your data
+                    that the admin has specified</p>
             </div>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control rounded-5" id="exampleInputEmail1" placeholder="Username">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <a href=""><i>Forgot Password ?</i></a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
         </div>
     </div>
 </body>
