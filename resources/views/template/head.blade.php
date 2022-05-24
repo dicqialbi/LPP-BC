@@ -20,6 +20,7 @@
     <style>
         #map { height: 180px; }
     </style>
+    <link rel="stylesheet" href="assets/css/pages/quill.css">
 
 
 </head>

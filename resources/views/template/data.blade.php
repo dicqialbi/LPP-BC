@@ -5,98 +5,105 @@
 
 <div>
     <div class="page-heading">
-        <h3>Data Tangkapan</h3>
-        <section class="section">
-            <div class="card">
-                {{-- <div class="card-header">
-                    Data Tangkapan
-                </div> --}}
-                <div class="card-body">
-                    <table class="table table-striped" id="table1">
-                        <thead>
-                            <tr>
-                                <th>No. Surat</th>
-                                <th>Dasar Surat</th>
-                                <th>Status</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>076 4820 8838</td>
-                                <td>vehicula.aliquet@semconsequat.co.uk</td>
-                                <td>
-                                    <span class="badge bg-warning">Proses</span>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger"><i class="bi bi-trash3"></i></button>
-                                    <button type="button" class="btn btn-success"><i class="bi bi-printer"></i></button>
+        <h3 class="mb-4">Data Tangkapan</h3>
+        <div class="page-content">
+            <section class="row">
+                <section class="section">
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-striped" id="table1">
+                                <thead>
+                                    <tr>
+                                        <th>No. Surat</th>
+                                        <th>Dasar Surat</th>
+                                        <th>Status</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>076 4820 8838</td>
+                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                        <td>
+                                            <span class="badge bg-success">Selesai</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="#" class="btn icon btn-outline-danger"><i data-feather="trash"></i></a>
+                                                <a href="#" class="btn icon btn-outline-success"><i
+                                                        data-feather="printer"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0500 527693</td>
+                                        <td>fringilla.euismod.enim@quam.ca</td>
+                                        <td>
+                                            <span class="badge bg-secondary">Proses</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="edit" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
+                                                <a href="#" class="btn icon btn-outline-success"><i
+                                                        data-feather="printer"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>076 4820 8838</td>
+                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                        <td>
+                                            <span class="badge bg-success">Selesai</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="#" class="btn icon btn-outline-danger"><i data-feather="trash"></i></a>
+                                                <a href="#" class="btn icon btn-outline-success"><i
+                                                        data-feather="printer"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0500 527693</td>
+                                        <td>fringilla.euismod.enim@quam.ca</td>
+                                        <td>
+                                            <span class="badge bg-secondary">Proses</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="edit" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
+                                                <a href="#" class="btn icon btn-outline-success"><i
+                                                        data-feather="printer"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination justify-content-end">
 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0500 527693</td>
-                                <td>fringilla.euismod.enim@quam.ca</td>
-                                <td>
-                                    <span class="badge bg-success">Selesai</span>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-primary"><i
-                                            class="bi bi-pencil-square"></i></button>
-                                    <button type="button" class="btn btn-danger"><i class="bi bi-trash3"></i></button>
-                                    <button type="button" class="btn btn-success"><i class="bi bi-printer"></i></button>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>076 4820 8838</td>
-                                <td>vehicula.aliquet@semconsequat.co.uk</td>
-                                <td>
-                                    <span class="badge bg-warning">Proses</span>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger"><i class="bi bi-trash3"></i></button>
-                                    <button type="button" class="btn btn-success"><i class="bi bi-printer"></i></button>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>0500 527693</td>
-                                <td>fringilla.euismod.enim@quam.ca</td>
-                                <td>
-                                    <span class="badge bg-success">Selesai</span>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-primary"><i
-                                            class="bi bi-pencil-square"></i></button>
-                                    <button type="button" class="btn btn-danger"><i class="bi bi-trash3"></i></button>
-                                    <button type="button" class="btn btn-success"><i class="bi bi-printer"></i></button>
-
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="pagination justify-content-end">
-                        <nav aria-label="...">
-                            <ul class="pagination">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </nav>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination pagination-primary">
+                                        <li class="page-item"><a class="page-link" href="#">
+                                                <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                                            </a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">
+                                                <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                                            </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <label class="btn btn-outline-primary" for="primary-outlined"><a class="btn" href="form">Tambah Data</a></label>
-        </section>
+                    <a href="form" class="btn icon icon-left btn-primary"><i data-feather="plus"></i> Tambah Data</a>
+                    {{-- <label class="btn btn-outline-primary" for="primary-outlined"><a class="btn icon" href="form">Tambah
+                            Data</a></label> --}}
+                </section>
+            </section>
+        </div>
+
     </div>
 </div>
 @endsection

@@ -31,3 +31,6 @@ Route::get('/form', function () {
 Route::get('/data', function () {
     return view('template.data');
 });
+Route::get('/edit', function () {
+    return view('data-tangkapan.edit');
+});

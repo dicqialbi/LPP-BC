@@ -14,53 +14,62 @@
     <link rel="stylesheet" href="{{ url('/')}}/assets/css/pages/auth.css">
     <link rel="shortcut icon" href="{{ url('/')}}/assets/images/logo/favicon.svg" type="image/x-icon">
     <link rel="shortcut icon" href="{{ url('/')}}/assets/images/logo/favicon.png" type="image/png">
-    <style>
-        .dark{
-            background-color: #1E1E2D;
-        }
-        .whity{
-            background: #ffffff;
-            width: 80%;
-        }
-        .img-three{
-            width: 150px !important;
-        }
-
-        .logo-sigap{
-            width: 150px !important;
-            margin-right: 50px;
-        }
-    </style>
 </head>
 
-<body class="dark">
-    <div class="row p-5 whity mt-5 m-auto">
+<body style="background-color: #ffffff" class="p-5">
+    <div class="row p-5 m-5" style="background-color: #151521">
         <div class="col-6 d-flex align-items-center">
-            <img src="{{asset('assets/images/logo/logo.png')}}" class="logo-sigap mr-4">
+            <div class="m-5">
+                <img src="{{asset('assets/images/logo/logo.png')}}" class="mr-4">
+            </div>
             <div class="ml-4">
-                <img src="{{asset('assets/images/logo/logo2.png')}}" class="img-three">
-                <p class="mt-2">Welcome to</p>
-                <h1 style="font-family: Roboto; font-size:50px">SIGAP</h1>
-                <p>Sistem informasi penindakan dan penangkapan</p>
+                <img src="{{asset('assets/images/logo/logo2.png')}}">
+                <h4 class="mt-3" style="font-family: calibri">Welcome to</h4>
+                <h1 style="font-family: Roboto; font-size:50px; font-weight:bolder">SIGAP</h1>
+                <p>(Sistem informasi penindakan dan penangkapan)</p>
             </div>
         </div>
-        <div class="col-6 shadow p-4">
+        <div class="col-6 shadow p-5" style="background-color: #1E1E2D">
             <div class="text-end">
-                <h2 class="fw-bold" style="font-family: 'Calibri' !important; font-size: 100px">Log in.</h2>
+                <h2 style="font-family: 'Calibri'; font-color:white; font-size: 100px">Log in.</h2>
                 <p>Log in with your data
                     that the admin has specified</p>
             </div>
             <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control rounded-5" id="exampleInputEmail1" placeholder="Username">
+                <div class="m-3">
+                    {{-- <div class="form-group position-relative has-icon-left">
+                        <input type="text" class="form-control" placeholder="Username">
+                        <div class="form-control-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+                    </div> --}}
+                    <div class="form-group position-relative has-icon-left mb-4">
+                        <input type="text" class="form-control form-control-xl" placeholder="Username">
+                        <div class="form-control-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+                    </div>
+                    <div class="form-group position-relative has-icon-left mb-4">
+                        <input type="password" class="form-control form-control-xl" placeholder="Password">
+                        <div class="form-control-icon">
+                            <i class="bi bi-key-fill"></i>
+                        </div>
+                    </div>
+                    {{-- <div class="form-group position-relative has-icon-left">
+                        <input type="password" class="form-control" placeholder="Password">
+                        <div class="form-control-icon">
+                            <i class="bi bi-key-fill"></i>
+                        </div>
+                    </div> --}}
+                    <a href="#"><i>Forgot Password ?</i></a>
+
                 </div>
-                <div class="mb-3">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <div class="m-3">
+                    <a href="/">
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </a>
                 </div>
-                <div class="mb-3">
-                    <a href=""><i>Forgot Password ?</i></a>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Login</button>
+
             </form>
         </div>
     </div>
