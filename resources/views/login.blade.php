@@ -55,18 +55,12 @@
                             <i class="bi bi-key-fill"></i>
                         </div>
                     </div>
-                    {{-- <div class="form-group position-relative has-icon-left">
-                        <input type="password" class="form-control" placeholder="Password">
-                        <div class="form-control-icon">
-                            <i class="bi bi-key-fill"></i>
-                        </div>
-                    </div> --}}
                     <a href="#"><i>Forgot Password ?</i></a>
 
                 </div>
                 <div class="m-3">
-                    <a href="/">
-                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <a href="dashboard">
+                        <button type="button" class="btn btn-primary btn-block">Login</button>
                     </a>
                 </div>
 

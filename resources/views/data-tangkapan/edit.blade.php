@@ -21,8 +21,10 @@
                 </div>
                 <div class="col-12 d-flex justify-content-end pt-2">
                     <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
-                    <button type="reset"
-                        class="btn btn-light-secondary me-1 mb-1">Cencel</button>
+                    <a href="data">
+                        <button type="reset"
+                        class="btn btn-secondary me-1 mb-1">Cencel</button>
+                    </a>
                 </div>
             </div>
         </div>
