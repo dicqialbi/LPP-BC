@@ -1,4 +1,4 @@
-@extends('template.app')
+@extends('pegawai.app')
 
 @section('content')
 <div class="page-heading">
@@ -160,9 +160,11 @@
                                                 </div>
                                             </div>
                                             {{-- button --}}
-                                            <div class="col-12 d-flex justify-content-end">
-                                                <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                            <div class="col-12 d-flex justify-content-between">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
                                                 <button type="reset" class="btn btn-danger me-1 mb-1">Reset</button>
+                                                </div>
                                                 <a href="data"><button type="button"
                                                         class="btn btn-secondary me-1 mb-1">Cancel</button></a>
                                             </div>

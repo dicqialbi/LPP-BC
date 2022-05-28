@@ -2,12 +2,12 @@
     <div class="sidebar-wrapper active">
         <div class="sidebar-header position-relative">
             <div class="d-flex justify-content-betwen align-items-center">
-                <div class="logo m-3">
-                    <img src="{{asset('assets/images/logo/logo.png')}}" style="">
+                <div class="m-3">
+                    <img src="{{asset('assets/images/logo/logo.png')}}" style="height: 50px; width: 35px;">
                     {{-- <span >Themes</span> --}}
                 </div>
                 <div class="d-flex">
-                    <h2 class="mt-3" style="font-family: Roboto; font-weight:bolder">SIGAP</h2>
+                    <h2 class="mt-3 ml-0" style="font-family: Roboto; font-weight:bolder">SIGAP</h2>
                 </div>
                 {{-- <div class="sidebar-toggler  x">
                     <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -18,25 +18,25 @@
             <ul class="menu">
                 <li class="sidebar-title">Menu</li>
 
-                <li class="sidebar-item {{ Request::segment(1) == 'dashboard' ? 'active' : '' }} ">
-                    <a href="{{url('/dashboard')}}" class='sidebar-link'>
+                <li class="sidebar-item {{ Request::segment(1) == '/kepala/dashboard' ? 'active' : '' }} ">
+                    <a href="{{url('/kepala/dashboard')}}" class='sidebar-link'>
                         <i class="bi bi-speedometer"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
-                <li class="sidebar-item {{ Request::segment(1) == 'data' ? 'active' : '' }}">
-                    <a href="data" class='sidebar-link'>
+                <li class="sidebar-item {{ Request::segment(1) == '/kepala/data' ? 'active' : '' }}">
+                    <a href='/kepala/data' class='sidebar-link'>
                         <i class="bi bi-clipboard-data-fill"></i>
                         <span>Data Tangkapan</span>
                     </a>
                 </li>
-                <li class="sidebar-item {{ Request::segment(1) == 'qrcode' ? 'active' : '' }}">
+                {{-- <li class="sidebar-item {{ Request::segment(1) == 'qrcode' ? 'active' : '' }}">
                     <a href="qrcode" class='sidebar-link'>
                         <i class="bi bi-qr-code"></i>
                         <span>QR Code</span>
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </div>
@@ -69,11 +69,11 @@
                                         <h6 class="dropdown-header">Notifications</h6>
 
                                     </li>
-                                    <li><a href="data" class="dropdown-item">Surat anda telah divalidasi oleh Kepala Kantor</a></li>
-                                    <li><a href="data" class="dropdown-item">Surat anda masih dalam proses validasi</a></li>
-                                    <li><a href="data" class="dropdown-item">Surat anda telah divalidasi oleh Kepala Kantor</a></li>
-                                    <li><a href="data" class="dropdown-item">Surat anda telah divalidasi oleh Kepala Kantor</a></li>
-                                    <li><a href="data" class="dropdown-item">Surat anda telah divalidasi oleh Kepala Kantor</a></li>
+                                    <li><a href="/kepala/data" class="dropdown-item">Terdapat pengajuan surat penindakan dari Charlie</a></li>
+                                    <li><a href="/kepala/data" class="dropdown-item">Terdapat pengajuan surat penindakan dari Bravo</a></li>
+                                    <li><a href="/kepala/data" class="dropdown-item">Terdapat pengajuan surat penindakan dari Bravo</a></li>
+                                    <li><a href="/kepala/data" class="dropdown-item">Terdapat pengajuan surat penindakan dari Bravo</a></li>
+                                    <li><a href="/kepala/data" class="dropdown-item">Terdapat pengajuan surat penindakan dari Charlie</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -135,7 +135,7 @@
                                 </li>
                                 <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" type="button" href="login">
+                                <li><a class="dropdown-item" type="button" href="/kepala/login">
                                         <i class="icon-mid bi bi-box-arrow-right me-2">
                                         </i>Logout
                                     </a>

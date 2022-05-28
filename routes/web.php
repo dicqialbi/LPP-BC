@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+//use App\Http\Controllers\SuratController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,24 +13,74 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/login', function () {
-    return view('login');
-});
 Route::get('/', function () {
-    return view('dashboard.index');
+    return view('pegawai.index');
 });
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
+
+// admin
+Route::get('/admin/login', function () {
+    return view('admin.login');
 });
-Route::get('/qrcode', function () {
-    return view('dashboard.index');
+Route::get('/admin/register', function () {
+    return view('admin.register');
 });
-Route::get('/form', function () {
-    return view('template.form');
+Route::get('/admin/dashboard', function () {
+    return view('admin.index');
 });
-Route::get('/data', function () {
-    return view('template.data');
+Route::get('/admin/data', function () {
+    return view('admin.data');
 });
-Route::get('/edit', function () {
-    return view('data-tangkapan.edit');
+Route::get('/admin/viewdata', function () {
+    return view('admin.viewdata');
 });
+Route::get('/admin/viewpdfdata', function () {
+    return view('admin.viewpdfdata');
+});
+
+// kepala
+Route::get('/kepala/login', function () {
+    return view('kepala.login');
+});
+Route::get('/kepala/dashboard', function () {
+    return view('kepala.index');
+});
+//
+Route::get('/kepala/data', function () {
+    return view('kepala.data');
+});
+Route::get('/kepala/viewdata', function () {
+    return view('kepala.viewdata');
+});
+Route::get('/generate-qrcode', [App\Http\Controllers\QrCodeController::class, 'index']);
+
+
+// pegawai
+Route::get('/pegawai/login', function () {
+    return view('pegawai.login');
+});
+Route::get('/pegawai/dashboard', function () {
+    return view('pegawai.index');
+});
+Route::get('/pegawai/formdata', function () {
+    return view('pegawai.formdata');
+});
+Route::get('/pegawai/data', function () {
+    return view('pegawai.data');
+});
+Route::get('/pegawai/viewdata', function () {
+    return view('pegawai.viewdata');
+});
+Route::get('/pegawai/viewpdfdata', function () {
+    return view('pegawai.viewpdfdata');
+});
+
+
+
+// tes
+Route::get('/view', function () {
+    return view('surat.view');
+});
+
+
+// COBA CETAK
+Route::get('/pegawai/export-surat',[App\Http\Controllers\ExportPDFController::class, 'cetakPdf']);

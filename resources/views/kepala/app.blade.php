@@ -1,15 +1,16 @@
-@include('template.head')
+@include('pegawai.head')
+
 
 <body>
     <div id="app">
-        @include('template.sidebar')
+        @include('kepala.sidebar')
         <header class="m-0 p-0">
         </header>
         <div id="main">
 
             @yield('content')
 
-            @include('template.footer')
+            @include('pegawai.footer')
         </div>
     </div>
     <script src="{{ url('/')}}/assets/js/app.js"></script>

@@ -1,4 +1,4 @@
-@extends('template.app')
+@extends('kepala.app')
 
 @section('content')
 <div>

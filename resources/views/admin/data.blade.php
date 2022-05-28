@@ -1,11 +1,13 @@
-@extends('template.app')
+@extends('admin.app')
 
 @section('content')
 
 
 <div>
     <div class="page-heading">
-        <h3 class="mb-4">Data Tangkapan</h3>
+        <div class="d-flex justify-content-between mb-3">
+            <h3 class="">Data Tangkapan</h3>
+        </div>
         <div class="page-content">
             <section class="row">
                 <section class="section">
@@ -29,8 +31,9 @@
                                         </td>
                                         <td>
                                             <div class="button">
+                                                <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i data-feather="book-open"></i></a>
                                                 <a href="#" class="btn icon btn-outline-danger"><i data-feather="trash"></i></a>
-                                                <a href="#" class="btn icon btn-outline-success"><i
+                                                <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
                                                         data-feather="printer"></i></a>
                                             </div>
                                         </td>
@@ -43,8 +46,8 @@
                                         </td>
                                         <td>
                                             <div class="button">
-                                                <a href="edit" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
-                                                <a href="#" class="btn icon btn-outline-success"><i
+                                                <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i data-feather="book-open"></i></a>
+                                                <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
                                                         data-feather="printer"></i></a>
                                             </div>
                                         </td>
@@ -57,8 +60,9 @@
                                         </td>
                                         <td>
                                             <div class="button">
+                                                <a href="/pegawai/viewdata" class="btn icon btn-outline-primary"><i data-feather="book-open"></i></a>
                                                 <a href="#" class="btn icon btn-outline-danger"><i data-feather="trash"></i></a>
-                                                <a href="#" class="btn icon btn-outline-success"><i
+                                                <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
                                                         data-feather="printer"></i></a>
                                             </div>
                                         </td>
@@ -71,8 +75,8 @@
                                         </td>
                                         <td>
                                             <div class="button">
-                                                <a href="edit" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
-                                                <a href="#" class="btn icon btn-outline-success"><i
+                                                <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i data-feather="book-open"></i></a>
+                                                <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
                                                         data-feather="printer"></i></a>
                                             </div>
                                         </td>
@@ -97,9 +101,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="form" class="btn icon icon-left btn-primary"><i data-feather="plus"></i> Tambah Data</a>
-                    {{-- <label class="btn btn-outline-primary" for="primary-outlined"><a class="btn icon" href="form">Tambah
-                            Data</a></label> --}}
+
                 </section>
             </section>
         </div>
