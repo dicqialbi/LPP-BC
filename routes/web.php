@@ -51,6 +51,10 @@ Route::get('/kepala/data', function () {
 Route::get('/kepala/viewdata', function () {
     return view('kepala.viewdata');
 });
+Route::get('/kepala/validasi', function () {
+    return view('kepala.validasi');
+});
+
 Route::get('/generate-qrcode', [App\Http\Controllers\QrCodeController::class, 'index']);
 
 
@@ -77,9 +81,6 @@ Route::get('/pegawai/viewpdfdata', function () {
 
 
 // tes
-Route::get('/view', function () {
-    return view('surat.view');
-});
 
 
 // COBA CETAK

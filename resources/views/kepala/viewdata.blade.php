@@ -8,7 +8,7 @@
             <div id="invoice">
                 <div class="invoice">
                     <div class="px-5 py-3" style="min-width: 100%">
-                        <header>
+                        <header id="invoice-company-details">
                             <div class="row justify-content-center px-5">
                                 <div class="col-3 text-center">
                                     <img src="{{asset('assets/images/logo/logo4.png')}}" style=" width:70%">
@@ -23,7 +23,8 @@
                                     </h6>
                                     <div style="font-size: 9pt">
                                         <div>JALAN KALIMANTAN NOMOR 33 JEMBER</div>
-                                        <div>TELEPON (0331)5444442, 5444470; FAKSIMILE (-); LAMAN WWW.BEACUKAI.GO.ID</div>
+                                        <div>TELEPON (0331)5444442, 5444470; FAKSIMILE (-); LAMAN WWW.BEACUKAI.GO.ID
+                                        </div>
                                         <div>PUSAT KONTAK LAYANAN 1500225; SUREL BCJEMBER@CUSTOMS.GO.ID</div>
                                     </div>
                                 </div>
@@ -44,8 +45,6 @@
                                         <th>NO.</th>
                                         <th>DESKRIPSI</th>
                                         <th>KETERANGAN</th>
-                                        {{-- <th class="text-right">HOURS</th>
-                                        <th class="text-right">TOTAL</th> --}}
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -242,9 +241,10 @@
                             </table>
                             <div class="col invoice-details text-end">
                                 <div class="date">Jember, 12 Mei 2022</div>
-                                <div class="my-2">
+                                <br><br><br>
+                                {{-- <div class="my-2">
                                     {!!QrCode::size(100)->color(255,255,255)->backgroundColor(30,30,45)->generate('RemoteStack')!!}
-                                </div>
+                                </div> --}}
                                 <div class="text">Kepala Kantor</div>
                                 <div class="text">Asep Munandar</div>
                             </div>
@@ -260,35 +260,27 @@
         </div>
     </div>
     <div class="col">
-        <div class="card">
-            <div class="card-header">
-                Catatan Penindakan
-            </div>
-            <div class="card-body">
-                <div class="form-group mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="notices text-secondary">
-                    <p><i> Bisa dikosongkan bilamana tidak diperlukan adanya catatan khusus</i></p>
-                </div>
-                <div class="col-12 d-flex justify-content-between">
-                    <div>
-                        <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+        <div class=" card card-body">
+            <form class="form form-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group mb-3">
+                            <label for="description-of-action" class="form-label">Catatan Penindakan</label>
+                            <textarea class="form-control" id="description-of-action" rows="3"></textarea>
+                        </div>
+                    </div>
+                    {{-- button --}}
+                    <div class="col-12 d-flex justify-content-between">
                         <button type="reset" class="btn btn-danger me-1 mb-1">Reset</button>
                     </div>
-                    <a href="/kepala/data"><button type="button" class="btn btn-secondary me-1 mb-1">Cancel</button></a>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
-    <div class="d-flex">
-        <div>
-            <a href="/kepala/data" class="btn icon btn-success"><i data-feather="check-square"></i> VALIDASI</a>
-
-        </div>
-
-    </div>
-
+</div>
+<div class="row">
+    <a href="/kepala/validasi" class="btn icon btn-primary"><i data-feather="check-square"></i> VALIDASI</a>
+</div>
 </div>
 
 @endsection

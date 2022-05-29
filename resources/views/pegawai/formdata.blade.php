@@ -2,7 +2,10 @@
 
 @section('content')
 <div class="page-heading">
-    <h3 class="mb-3">Tambahkan Data Tangkapan</h3>
+    <div class="d-flex justify-content-between">
+        <h3 class="mb-3">Tambahkan Data Tangkapan</h3>
+        <a href="data"><button type="button" class="btn btn-secondary me-1 mb-1">Cancel</button></a>
+    </div>
     <div class="page-content">
         <section id="basic-vertical-layouts">
             <div class="row match-height">
@@ -13,6 +16,7 @@
                                 <form class="form form-vertical">
                                     <div class="form-body">
                                         <div class="row">
+                                            {{-- form --}}
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <label for="letter">Dasar Surat</label>
@@ -141,32 +145,28 @@
                                                 <div class="form-group">
                                                     <label for="jenis-kemasan">Jenis Kemasan</label>
                                                     <input type="text" id="jenis-kemasan" class="form-control"
-                                                        name="jenis-kemasan" placeholder="">
+                                                        name="jenis-kemasan" placeholder="Box">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="jumlah-kemasan">Jumlah Kemasan</label>
                                                     <input type="text" id="jumlah-kemasan" class="form-control"
-                                                        name="jumlah-kemasan" placeholder="">
+                                                        name="jumlah-kemasan" placeholder="300 Box">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="jenis-barang">Jenis Barang</label>
                                                     <input type="text" id="jenis-barang" class="form-control"
-                                                        name="jenis-barang" placeholder="">
+                                                        name="jenis-barang" placeholder="Minuman">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="jumlah-barang">Jumlah Barang</label>
                                                     <input type="number" id="jumlah-barang" class="form-control"
-                                                        name="jumlah-barang" placeholder="">
+                                                        name="jumlah-barang" placeholder="1500">
                                                 </div>
                                             </div>
                                             {{-- button --}}
-                                            <div class="col-12 d-flex justify-content-between">
-                                                <div>
-                                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                            <div class="col-12 d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
                                                 <button type="reset" class="btn btn-danger me-1 mb-1">Reset</button>
-                                                </div>
-                                                <a href="data"><button type="button"
-                                                        class="btn btn-secondary me-1 mb-1">Cancel</button></a>
                                             </div>
                                         </div>
                                     </div>

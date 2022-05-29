@@ -3,71 +3,62 @@
 
 
 <!-- Mirrored from zuramai.github.io/mazer/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 00:32:30 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Laporan P2</title>
-
+    <title>Laporan Penindakan</title>
+    <link rel="shortcut icon" href="{{asset('assets/images/logo/logosc.png')}}" type="image/png">
     <link rel="stylesheet" href="{{ url('/')}}/assets/css/main/app.css">
-    {{-- <style>
-        .container{
-            width: 2550px;
-            height: 3300px;
-            margin: auto;
-            background-color: silver
-        }
-        .card{
-            background-color: white;
-            margin: 50px
-        }
-
-    </style> --}}
 </head>
 
 <body>
     <div class="container">
-        <div class="card">
+        <section class="card p-3">
             <div class="card-body">
+                <!-- Invoice Company Details -->
                 <div id="invoice">
                     <div class="invoice">
-                        <div style="min-width: 600px">
-                            <header>
-                                <div class="row">
-
-                                    <div class="col company-details text-end">
-                                        <h2 class="name">
-                                            <a target="_blank" href="">
-                                                KPPBC TMP C JEMBER
-                                            </a>
-                                        </h2>
-                                        <div>455 Foggy Heights, AZ 85004, US</div>
-                                        <div>(123) 456-789</div>
-                                        <div>kppbctmpcjember@gmail.com</div>
+                        <div class="px-5 py-3" style="min-width: 100%">
+                            <header id="invoice-company-details">
+                                <div class="row justify-content-center px-5">
+                                    <div class="col-3 text-center">
+                                        <img src="{{asset('assets/images/logo/logo3.png')}}" style=" width:70%">
+                                    </div>
+                                    <div class="col-5 company-details text-center" style="width: 75%">
+                                        <h6 class="name">
+                                            KEMENTERIAN KEUANGAN REPUBLIK INDONESIA
+                                            <div>DIREKTORAT JENDERAL BEA DAN CUKAI</div>
+                                            <div>KANTOR WILAYAH DIREKTORAT JENDERAL BEA DAN CUKAI JAWA TIMUR II</div>
+                                            <div>KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI</div>
+                                            <div>TIPE MADYA PABEAN C JEMBER</div>
+                                        </h6>
+                                        <div style="font-size: 9pt">
+                                            <div>JALAN KALIMANTAN NOMOR 33 JEMBER</div>
+                                            <div>TELEPON (0331)5444442, 5444470; FAKSIMILE (-); LAMAN WWW.BEACUKAI.GO.ID
+                                            </div>
+                                            <div>PUSAT KONTAK LAYANAN 1500225; SUREL BCJEMBER@CUSTOMS.GO.ID</div>
+                                        </div>
                                     </div>
                                 </div>
+                                <hr>
                             </header>
                             <main>
                                 <div class="row contacts">
-                                    <div class="col invoice-to">
-                                        <div class="text-gray-light">LETTER TO:</div>
-                                        <h2 class="to">John Doe</h2>
-                                        <div class="address">796 Silver Harbour, TX 79273, US</div>
-                                        <div class="email"><a href="#">john@example.com</a>
-                                        </div>
-                                    </div>
-                                    <div class="col invoice-details text-end">
+                                    <div class="col invoice-details text-center">
                                         <h3 class="invoice-id">Surat Penindakan</h3>
-                                        <div class="date">Date of Letter: 01/10/2018</div>
-                                        <div class="date">Due Date: 30/10/2018</div>
+                                        <div class="date">Date of Letter: 01/10/2022</div>
+                                        <div class="date">Due Date: 30/10/2022</div>
                                     </div>
                                 </div>
-                                <table class="table table-striped my-4" id="table1">
+                                <table class="table table-bordered my-4" id="table-bordered">
                                     <thead>
                                         <tr>
                                             <th>NO.</th>
-                                            <th class="text-left">DESKRIPSI</th>
-                                            <th class="text-right">KETERANGAN</th>
+                                            <th>DESKRIPSI</th>
+                                            <th>KETERANGAN</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -76,21 +67,21 @@
                                             <td class="text-left">
                                                 Dasar Surat
                                             </td>
-                                            <td class="unit">$0.00</td>
+                                            <td class="unit">#</td>
                                         </tr>
                                         <tr>
                                             <td class="no">02</td>
                                             <td class="text-left">
                                                 Nama Pelaku
                                             </td>
-                                            <td class="unit">Rizal</td>
+                                            <td class="unit">#</td>
                                         </tr>
                                         <tr>
                                             <td class="no">03</td>
                                             <td class="text-left">
                                                 Alamat Pelaku
                                             </td>
-                                            <td class="unit">Jakarta Barat</td>
+                                            <td class="unit">#</td>
                                         </tr>
                                         <tr>
                                             <td class="no">04</td>
@@ -262,27 +253,43 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="thanks">Thank you!</div>
                                 <div class="col invoice-details text-end">
                                     <div class="date">Jember, 12 Mei 2022</div>
-                                    <br><br><br><br>
+                                    <div class="my-2">
+                                        {!!QrCode::size(100)->generate('RemoteStack')!!}
+                                    </div>
                                     <div class="text">Kepala Kantor</div>
                                     <div class="text">Asep Munandar</div>
                                 </div>
-                                <div class="notices">
-                                    <div>NOTICE:</div>
-                                    <div class="notice">Dimohon untuk lokasi penangkapan bisa disertakan dengan lengkap
+                            </main>
+                            <div id="invoice-footer">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <h6>Catatan</h6>
+                                        <p>Sebaiknya lokasi penindakan disertakan secara lengkap</p>
                                     </div>
                                 </div>
-                            </main>
-                            <footer>Kantor Pengawasan dan Pelayanan Bea dan Cukai Tipe Madya Pabean C Jember</footer>
+                                <div id="invoice-footer">
+                                    <footer>Kantor Pengawasan dan Pelayanan Bea dan Cukai Tipe Madya Pabean C Jember
+                                    </footer>
+                                </div>
+                            </div>
                         </div>
+
                         <!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
                         <div></div>
                     </div>
                 </div>
+                <!-- Invoice Footer -->
+                <div class="row">
+                    <a href="/kepala/data" class="btn icon btn-success"><i data-feather="send"></i>SEND
+                        VALIDATION</a>
+                    <a href="/kepala/viewdata" class="btn icon btn-secondary mt-1"><i data-feather="check-square"></i>
+                        CANCEL</a>
+                </div>
+                <!--/ Invoice Footer -->
             </div>
-        </div>
+        </section>
     </div>
 </body>
 

@@ -9,255 +9,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Laporan P2</title>
-
-    {{-- <link rel="stylesheet" href="{{ url('/')}}/assets/css/main/app.css"> --}}
-
+    <title>Laporan Penindakan</title>
+    <link rel="shortcut icon" href="{{asset('assets/images/logo/logosc.png')}}" type="image/png">
+    <link rel="stylesheet" href="{{ url('/')}}/assets/css/main/app.css">
 </head>
 
 <body>
-    <div
-        style="background-color: rgb(255, 255, 255); height: 1650px; width: 1275px; margin: 25px; padding: 25px; box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336)">
-        <header>
-            <table>
-                <tr style="align-content:center">
-                    <td style="width: 20%;">
-                        <img src="{{asset('assets/images/logo/logo3.png')}}" alt="" style="width: 80%;">
-                    </td>
-                    <td style="width: 80%; float: left;">
-                        <div style="text-align: center; margin: 0pt ; font-size: 15pt ">
-                            <p>KEMENTERIAN KEUANGAN REPUBLIK INDONESIA</p>
-                            <p>DIREKTORAT JENDERAL BEA DAN CUKAI</p>
-                            <p>KANTOR WILAYAH DIREKTORAT JENDERAL BEA DAN CUKAI JAWA TIMUR II</p>
-                            <p>KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN C JEMBER</p>
+    <div class="container">
+        <section class="card p-3">
+            <div class="card-body">
+                <!-- Invoice Company Details -->
+                <div id="invoice">
+                    <div class="invoice">
+                        <div class="px-5 py-3" style="min-width: 100%">
+                            <header id="invoice-company-details">
+                                <div class="row justify-content-center px-5">
+                                    <div class="col-3 text-center">
+                                        <img src="{{asset('assets/images/logo/logo3.png')}}" style=" width:70%">
+                                    </div>
+                                    <div class="col-5 company-details text-center" style="width: 75%">
+                                        <h6 class="name">
+                                            KEMENTERIAN KEUANGAN REPUBLIK INDONESIA
+                                            <div>DIREKTORAT JENDERAL BEA DAN CUKAI</div>
+                                            <div>KANTOR WILAYAH DIREKTORAT JENDERAL BEA DAN CUKAI JAWA TIMUR II</div>
+                                            <div>KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI</div>
+                                            <div>TIPE MADYA PABEAN C JEMBER</div>
+                                        </h6>
+                                        <div style="font-size: 9pt">
+                                            <div>JALAN KALIMANTAN NOMOR 33 JEMBER</div>
+                                            <div>TELEPON (0331)5444442, 5444470; FAKSIMILE (-); LAMAN WWW.BEACUKAI.GO.ID
+                                            </div>
+                                            <div>PUSAT KONTAK LAYANAN 1500225; SUREL BCJEMBER@CUSTOMS.GO.ID</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </header>
+                            <main>
+                                <div class="row contacts">
+                                    <div class="col invoice-details text-center">
+                                        <h3 class="invoice-id">Surat Penindakan</h3>
+                                        <div class="date">Date of Letter: 01/10/2022</div>
+                                        <div class="date">Due Date: 30/10/2022</div>
+                                    </div>
+                                </div>
+                                <table class="table table-bordered my-4" id="table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>NO.</th>
+                                            <th>DESKRIPSI</th>
+                                            <th>KETERANGAN</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="no">01</td>
+                                            <td class="text-left">
+                                                Dasar Surat
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">02</td>
+                                            <td class="text-left">
+                                                Nama Pelaku
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">03</td>
+                                            <td class="text-left">
+                                                Alamat Pelaku
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">04</td>
+                                            <td class="text-left">
+                                                Lokasi Penangkapan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">05</td>
+                                            <td class="text-left">
+                                                Nama Pengangkut
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">06</td>
+                                            <td class="text-left">
+                                                Bendera
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">07</td>
+                                            <td class="text-left">
+                                                No Register
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">08</td>
+                                            <td class="text-left">
+                                                No Voy
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">09</td>
+                                            <td class="text-left">
+                                                Kapasitas Muatan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">10</td>
+                                            <td class="text-left">
+                                                Merek Kapasitas Mesin
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">11</td>
+                                            <td class="text-left">
+                                                Nahkoda
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">12</td>
+                                            <td class="text-left">
+                                                Awak Kapal
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">13</td>
+                                            <td class="text-left">
+                                                Jenis No Dokumen
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">14</td>
+                                            <td class="text-left">
+                                                Uraian Penindakan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">15</td>
+                                            <td class="text-left">
+                                                Alasan Penindakan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">16</td>
+                                            <td class="text-left">
+                                                Dugaan Pelanggaran
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">17</td>
+                                            <td class="text-left">
+                                                Tindakan Yang Dilakukan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">18</td>
+                                            <td class="text-left">
+                                                Kategori Penindakan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">19</td>
+                                            <td class="text-left">
+                                                Status Penindakan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">20</td>
+                                            <td class="text-left">
+                                                Waktu Mulai Penindakan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">21</td>
+                                            <td class="text-left">
+                                                Waktu Selesai Penindakan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">22</td>
+                                            <td class="text-left">
+                                                Pejabat Penindak
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">23</td>
+                                            <td class="text-left">
+                                                Komiditi
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">24</td>
+                                            <td class="text-left">
+                                                Jenis Kemasan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">25</td>
+                                            <td class="text-left">
+                                                Jumlah Kemasan
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">26</td>
+                                            <td class="text-left">
+                                                Jenis Barang
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="no">27</td>
+                                            <td class="text-left">
+                                                Jumlah Barang
+                                            </td>
+                                            <td class="unit">#</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="col invoice-details text-end">
+                                    <div class="date">Jember, 12 Mei 2022</div>
+                                    <div class="my-2">
+                                        {!!QrCode::size(100)->generate('RemoteStack')!!}
+                                    </div>
+                                    <div class="text">Kepala Kantor</div>
+                                    <div class="text">Asep Munandar</div>
+                                </div>
+                            </main>
+                            <div id="invoice-footer">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <h6>Catatan</h6>
+                                        <p>Sebaiknya lokasi penindakan disertakan secara lengkap</p>
+                                    </div>
+                                </div>
+                                <div id="invoice-footer">
+                                    <footer>Kantor Pengawasan dan Pelayanan Bea dan Cukai Tipe Madya Pabean C Jember
+                                    </footer>
+                                </div>
+                            </div>
                         </div>
-                        <div style="font-size: 11pt; text-align: center;">
-                            <p>JALAN KALIMANTAN NOMOR 33 JEMBER</p>
-                            <P>TELEPON (0331)5444442, 5444470; FAKSIMILE (-); LAMAN WWW.BEACUKAI.GO.ID</P>
-                            <P>PUSAT KONTAK LAYANAN 1500225; SUREL BCJEMBER@CUSTOMS.GO.ID</P>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <hr style="box-align: center">
-        </header>
-        <main>
-            <h4 style="text-align: center">SURAT PENINDAKAN</h4>
-            <div style="width: 100%">
-                <table style="border: 0.5; border-collapse: collapse;">
-                    <thead>
-                        <tr>
-                            <th>NO.</th>
-                            <th>DESKRIPSI</th>
-                            <th>KETERANGAN</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>01</td>
-                            <td>
-                                Dasar Surat
-                            </td>
-                            <td>$0.00</td>
-                        </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>
-                                Nama Pelaku
-                            </td>
-                            <td>Rizal</td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>
-                                Alamat Pelaku
-                            </td>
-                            <td>Jakarta Barat</td>
-                        </tr>
-                        <tr>
-                            <td>04</td>
-                            <td>
-                                Lokasi Penangkapan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>05</td>
-                            <td>
-                                Nama Pengangkut
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>06</td>
-                            <td>
-                                Bendera
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>07</td>
-                            <td>
-                                No Register
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>08</td>
-                            <td>
-                                No Voy
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>09</td>
-                            <td>
-                                Kapasitas Muatan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>
-                                Merek Kapasitas Mesin
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>
-                                Nahkoda
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>
-                                Awak Kapal
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>
-                                Jenis No Dokumen
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td>
-                                Uraian Penindakan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>
-                                Alasan Penindakan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>16</td>
-                            <td>
-                                Dugaan Pelanggaran
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>17</td>
-                            <td>
-                                Tindakan Yang Dilakukan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>18</td>
-                            <td>
-                                Kategori Penindakan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>19</td>
-                            <td>
-                                Status Penindakan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>20</td>
-                            <td>
-                                Waktu Mulai Penindakan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>21</td>
-                            <td>
-                                Waktu Selesai Penindakan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>22</td>
-                            <td>
-                                Pejabat Penindak
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>23</td>
-                            <td>
-                                Komiditi
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>24</td>
-                            <td>
-                                Jenis Kemasan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td>
-                                Jumlah Kemasan
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>26</td>
-                            <td>
-                                Jenis Barang
-                            </td>
-                            <td>#</td>
-                        </tr>
-                        <tr>
-                            <td>27</td>
-                            <td>
-                                Jumlah Barang
-                            </td>
-                            <td>#</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div style="text-align: right">
-                <div>Jember, 12 Mei 2022</div>
-                <br><br><br><br>
-                <div>Kepala Kantor</div>
-                <div>Asep Munandar</div>
-            </div>
-            <div>
-                <div>NOTICE:</div>
-                <div>Dimohon untuk lokasi penangkapan bisa disertakan dengan lengkap
+
+                        <!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
+                        <div></div>
+                    </div>
                 </div>
+                <!-- Invoice Footer -->
             </div>
-        </main>
-        <footer>Kantor Pengawasan dan Pelayanan Bea dan Cukai Tipe Madya Pabean C Jember</footer>
+        </section>
     </div>
 </body>
 

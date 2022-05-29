@@ -34,7 +34,7 @@
                                             <div class="button">
                                                 <a href="/pegawai/viewdata" class="btn icon btn-outline-primary"><i data-feather="book-open"></i></a>
                                                 <a href="#" class="btn icon btn-outline-danger"><i data-feather="trash"></i></a>
-                                                <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
+                                                <a href="/pegawai/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
                                                         data-feather="printer"></i></a>
                                             </div>
                                         </td>

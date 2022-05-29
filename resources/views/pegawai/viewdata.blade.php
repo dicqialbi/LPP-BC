@@ -9,7 +9,7 @@
                 <div class="toolbar hidden-print">
                     <div class="text-end">
                         {{-- <button type="button" class="btn btn-dark"><i class="bi bi-printer"></i> Print</button> --}}
-                        <a href="/pegawai/viewpdfdata" class="btn btn-danger" target="_blank"><i
+                        <a href="export-surat" class="btn btn-danger" target="_blank"><i
                                 class="bi bi-filetype-pdf"></i> Export as
                             PDF</a>
                     </div>
