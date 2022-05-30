@@ -140,9 +140,8 @@
                                                 data-bs-target="#logout"><i data-feather="log-out"></i> Log out</button>
                                         </div>
                                         {{-- modal --}}
-                                        <div class="modal fade text-left" id="logout" tabindex="-1"
-                                            role="dialog" aria-labelledby="myModalLabel120"
-                                            aria-hidden="true">
+                                        <div class="modal fade text-left" id="logout" tabindex="-1" role="dialog"
+                                            aria-labelledby="myModalLabel120" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
                                                 role="document">
                                                 <div class="modal-content">
@@ -155,8 +154,7 @@
                                                         Apakah anda yakin ingin keluar dari halaman ini?
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button"
-                                                            class="btn btn-light-secondary"
+                                                        <button type="button" class="btn btn-light-secondary"
                                                             data-bs-dismiss="modal">
                                                             <i class="bx bx-x d-block d-sm-none"></i>
                                                             <span class="d-none d-sm-block">Close</span>

@@ -55,7 +55,7 @@
                             <i class="bi bi-key-fill"></i>
                         </div>
                     </div>
-                    <a href="#"><i>Forgot Password ?</i></a>
+                    <a href="/kepala/forgot"><i>Forgot Password ?</i></a>
 
                 </div>
                 <div class="m-3">

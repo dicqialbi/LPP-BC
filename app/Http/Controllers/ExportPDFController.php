@@ -38,7 +38,8 @@ class ExportPDFController extends Controller
             'jumlah_barang' => '900'
 
         ];
-        $pdf = PDF::loadview('pegawai.viewpdfdata');
+        // $pdf = PDF::loadview('pegawai.viewpdfdata');
+        $pdf = PDF::loadview('.pdf');
 
         return $pdf->stream();
     }

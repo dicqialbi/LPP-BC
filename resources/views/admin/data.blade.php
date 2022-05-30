@@ -63,7 +63,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
+                                    <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
                                             data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -78,7 +78,7 @@
                                 <div class="button">
                                     <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i
                                             data-feather="book-open"></i></a>
-                                    <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
+                                    <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
                                             data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -127,7 +127,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
+                                    <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
                                             data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -175,7 +175,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> <a href="/admin/viewpdfdata" class="btn icon btn-outline-success"
+                                    </div> <a href="export-surat" class="btn icon btn-outline-success"
                                         target="_blank"><i data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -223,7 +223,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> <a href="/admin/viewpdfdata" class="btn icon btn-outline-success"
+                                    </div> <a href="export-surat" class="btn icon btn-outline-success"
                                         target="_blank"><i data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -238,7 +238,7 @@
                                 <div class="button">
                                     <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i
                                             data-feather="book-open"></i></a>
-                                    <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
+                                    <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
                                             data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -253,7 +253,7 @@
                                 <div class="button">
                                     <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i
                                             data-feather="book-open"></i></a>
-                                    <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
+                                    <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
                                             data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -268,7 +268,7 @@
                                 <div class="button">
                                     <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i
                                             data-feather="book-open"></i></a>
-                                    <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
+                                    <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
                                             data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -283,7 +283,7 @@
                                 <div class="button">
                                     <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i
                                             data-feather="book-open"></i></a>
-                                    <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
+                                    <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
                                             data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -298,7 +298,7 @@
                                 <div class="button">
                                     <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i
                                             data-feather="book-open"></i></a>
-                                    <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
+                                    <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
                                             data-feather="printer"></i></a>
                                 </div>
                             </td>
@@ -313,7 +313,7 @@
                                 <div class="button">
                                     <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i
                                             data-feather="book-open"></i></a>
-                                    <a href="/admin/viewpdfdata" class="btn icon btn-outline-success" target="_blank"><i
+                                    <a href="export-surat" class="btn icon btn-outline-success" target="_blank"><i
                                             data-feather="printer"></i></a>
                                 </div>
                             </td>

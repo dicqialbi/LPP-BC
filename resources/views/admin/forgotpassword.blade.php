@@ -16,8 +16,8 @@
     <link rel="shortcut icon" href="{{asset('assets/images/logo/logosc.png')}}" type="image/png">
 </head>
 
-<body style="background-color: #ffffff" class="p-5">
-    <div class="row p-5 m-5" style="background-color: #151521">
+<body class="py-5">
+    <div class="row d-flex align-items-center m-auto" style="background-color: #151521; width: 80%">
         <div class="col-6 d-flex align-items-center">
             <div class="m-5">
                 <img src="{{asset('assets/images/logo/logo.png')}}" class="mr-4">
@@ -31,37 +31,31 @@
         </div>
         <div class="col-6 shadow p-5" style="background-color: #1E1E2D">
             <div class="text-end">
-                <h2 style="font-family: 'Calibri'; font-color:white; font-size: 100px">Log in.</h2>
-                <p>Log in with your data
-                    that the admin has specified</p>
+                <h2 style="font-family: 'Calibri'; font-size: 70pt">Forgot password.</h2>
+                <p>Input your email and we will send
+                    you reset password link.</p>
             </div>
             <form>
-                <div class="m-3">
+                <div class="m-5">
                     <div class="form-group position-relative has-icon-left mb-4">
-                        <input type="text" class="form-control form-control-xl" placeholder="Username">
+                        <input type="email" class="form-control form-control-xl" placeholder="Email Address">
                         <div class="form-control-icon">
-                            <i class="bi bi-person"></i>
+                            <i class="bi bi-envelope"></i>
                         </div>
                     </div>
-                    <div class="form-group position-relative has-icon-left mb-4">
-                        <input type="password" class="form-control form-control-xl" placeholder="Password">
-                        <div class="form-control-icon">
-                            <i class="bi bi-key-fill"></i>
-                        </div>
-                    </div>
-                    <a href="/admin/forgot"><i>Forgot Password ?</i></a>
-
                 </div>
-                <div class="m-3">
-                    <a href="/admin/dashboard">
-                        <button type="button" class="btn btn-primary btn-block">Login</button>
+                <div class="mx-5">
+                    <a href="/admin/login">
+                        <button type="button" class="btn btn-primary btn-block">Send</button>
                     </a>
                 </div>
-                <div class="text-center text-lg fs-4">
-                    <p><a href="/admin/register" class="font-bold">Create account</a>.</p>
-                </div>
+
             </form>
         </div>
     </div>
 </body>
+
+
+<!-- Mirrored from zuramai.github.io/mazer/demo/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 00:34:54 GMT -->
+
 </html>

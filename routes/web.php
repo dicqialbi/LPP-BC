@@ -39,6 +39,9 @@ Route::get('/admin/viewpdfdata', function () {
 Route::get('/admin/users', function () {
     return view('admin.users');
 });
+Route::get('/admin/forgot', function () {
+    return view('admin.forgotpassword');
+});
 
 
 // kepala
@@ -60,6 +63,9 @@ Route::get('/kepala/validasi', function () {
 });
 Route::get('/kepala/viewpdfdata', function () {
     return view('kepala.viewpdfdata');
+});
+Route::get('/kepala/forgot', function () {
+    return view('kepala.forgotpassword');
 });
 
 Route::get('/generate-qrcode', [App\Http\Controllers\QrCodeController::class, 'index']);
@@ -84,11 +90,17 @@ Route::get('/pegawai/viewdata', function () {
 Route::get('/pegawai/viewpdfdata', function () {
     return view('pegawai.viewpdfdata');
 });
+Route::get('/pegawai/forgot', function () {
+    return view('pegawai.forgotpassword');
+});
 
 
 
 // tes
-
+Route::get('/surat-penindakan', function () {
+    return view('pdf');
+});
 
 // COBA CETAK
 Route::get('/pegawai/export-surat',[App\Http\Controllers\ExportPDFController::class, 'cetakPdf']);
+Route::get('/admin/export-surat',[App\Http\Controllers\ExportPDFController::class, 'cetakPdf']);
