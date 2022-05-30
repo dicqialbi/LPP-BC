@@ -17,26 +17,18 @@
         <div class="sidebar-menu">
             <ul class="menu">
                 <li class="sidebar-title">Menu</li>
-
                 <li class="sidebar-item {{ Request::segment(1) == '/pegawai/dashboard' ? 'active' : '' }} ">
                     <a href="{{url('/pegawai/dashboard')}}" class='sidebar-link'>
                         <i class="bi bi-speedometer"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
-
                 <li class="sidebar-item {{ Request::segment(1) == '/pegawai/data' ? 'active' : '' }}">
                     <a href='/pegawai/data' class='sidebar-link'>
                         <i class="bi bi-clipboard-data-fill"></i>
                         <span>Data Tangkapan</span>
                     </a>
                 </li>
-                {{-- <li class="sidebar-item {{ Request::segment(1) == 'qrcode' ? 'active' : '' }}">
-                    <a href="qrcode" class='sidebar-link'>
-                        <i class="bi bi-qr-code"></i>
-                        <span>QR Code</span>
-                    </a>
-                </li> --}}
             </ul>
         </div>
     </div>
@@ -62,18 +54,23 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class='bi bi-bell bi-sub fs-4'></i>
                                     <span
-                                        class="badge bg-light-primary badge-pill badge-round float-right mt-50">5</span>
+                                        class="badge bg-light-danger badge-pill badge-round float-right mt-50">5</span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                                     <li>
                                         <h6 class="dropdown-header">Notifications</h6>
 
                                     </li>
-                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda telah divalidasi oleh Kepala Kantor</a></li>
-                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda masih dalam proses validasi</a></li>
-                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda telah divalidasi oleh Kepala Kantor</a></li>
-                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda telah divalidasi oleh Kepala Kantor</a></li>
-                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda telah divalidasi oleh Kepala Kantor</a></li>
+                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda telah divalidasi oleh
+                                            Kepala Kantor</a></li>
+                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda masih dalam proses
+                                            validasi</a></li>
+                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda telah divalidasi oleh
+                                            Kepala Kantor</a></li>
+                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda telah divalidasi oleh
+                                            Kepala Kantor</a></li>
+                                    <li><a href="/pegawai/data" class="dropdown-item">Surat anda telah divalidasi oleh
+                                            Kepala Kantor</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -82,11 +79,11 @@
                                 <div class="user-menu d-flex">
                                     <div class="user-name text-end me-3">
                                         <h6 class="mb-0 text-gray-600">John Ducky</h6>
-                                        <p class="mb-0 text-sm text-gray-600">Administrator</p>
+                                        <p class="mb-0 text-sm text-gray-600">Pegawai Kantor</p>
                                     </div>
                                     <div class="user-img d-flex align-items-center dropdown-toggle text-gray-600">
                                         <div class="avatar avatar-md">
-                                            <img src="assets/images/faces/1.jpg">
+                                            <img src={{asset('assets/images/faces/7.jpg')}}>
                                         </div>
                                     </div>
                                 </div>
@@ -135,10 +132,51 @@
                                 </li>
                                 <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" type="button" href="/pegawai/login">
+                                <li>
+                                    <div class="dropdown-item modal-danger d-inline-block">
+                                        {{-- button --}}
+                                        <div class="row">
+                                            <button class="btn icon btn-danger" data-bs-toggle="modal"
+                                                data-bs-target="#logout"><i data-feather="log-out"></i> Log out</button>
+                                        </div>
+                                        {{-- modal --}}
+                                        <div class="modal fade text-left" id="logout" tabindex="-1"
+                                            role="dialog" aria-labelledby="myModalLabel120"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-danger">
+                                                        <h5 class="modal-title white" id="myModalLabel120">
+                                                            Konfirmasi
+                                                        </h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Apakah anda yakin ingin keluar dari halaman ini?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn btn-light-secondary"
+                                                            data-bs-dismiss="modal">
+                                                            <i class="bx bx-x d-block d-sm-none"></i>
+                                                            <span class="d-none d-sm-block">Close</span>
+                                                        </button>
+                                                        <a href="/pegawai/login">
+                                                            <button type="button" class="btn btn-danger ml-1"
+                                                                data-bs-dismiss="modal">
+                                                                <i class="bx bx-check d-block d-sm-none"></i>
+                                                                <span class="d-none d-sm-block">Accept</span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- <div class="dropdown-item" type="button" href="/pegawai/login">
                                         <i class="icon-mid bi bi-box-arrow-right me-2">
-                                        </i>Logout
-                                    </a>
+                                        </i>Log out
+                                    </div> --}}
                                 </li>
                             </ul>
                         </div>

@@ -64,8 +64,4 @@
         </div>
     </div>
 </body>
-
-
-<!-- Mirrored from zuramai.github.io/mazer/demo/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 00:34:54 GMT -->
-
 </html>

@@ -1,8 +1,6 @@
 @extends('kepala.app')
 
 @section('content')
-
-
 <div>
     <div class="page-heading">
         <div class="d-flex justify-content-between mb-3">
@@ -31,9 +29,41 @@
                                         </td>
                                         <td>
                                             <div class="button">
-                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="file-text"></i></a>
-                                                <a href="#" class="btn icon btn-outline-danger"><i data-feather="trash"></i></a>
-
+                                                <a href="/kepala/viewpdfdata" class="btn icon btn-outline-secondary"><i data-feather="book-open"></i></a>
+                                                <div class="modal-danger d-inline-block">
+                                                    {{-- button --}}
+                                                    <button class="btn icon btn-outline-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#delete"><i data-feather="trash"></i></button>
+                                                    {{-- modal --}}
+                                                    <div class="modal fade text-left" id="delete" tabindex="-1" role="dialog"
+                                                        aria-labelledby="myModalLabel120" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header bg-danger">
+                                                                    <h5 class="modal-title white" id="myModalLabel120">
+                                                                        Konfirmasi
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Apakah anda yakin ingin menghapus data ini?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-light-secondary"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Close</span>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger ml-1"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Accept</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -45,7 +75,7 @@
                                         </td>
                                         <td>
                                             <div class="button">
-                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="file-text"></i></a>
+                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
 
                                             </div>
                                         </td>
@@ -58,9 +88,41 @@
                                         </td>
                                         <td>
                                             <div class="button">
-                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="file-text"></i></a>
-                                                <a href="#" class="btn icon btn-outline-danger"><i data-feather="trash"></i></a>
-
+                                                <a href="/kepala/viewpdfdata" class="btn icon btn-outline-secondary"><i data-feather="book-open"></i></a>
+                                                <div class="modal-danger d-inline-block">
+                                                    {{-- button --}}
+                                                    <button class="btn icon btn-outline-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#delete"><i data-feather="trash"></i></button>
+                                                    {{-- modal --}}
+                                                    <div class="modal fade text-left" id="delete" tabindex="-1" role="dialog"
+                                                        aria-labelledby="myModalLabel120" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header bg-danger">
+                                                                    <h5 class="modal-title white" id="myModalLabel120">
+                                                                        Konfirmasi
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Apakah anda yakin ingin menghapus data ini?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-light-secondary"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Close</span>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger ml-1"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Accept</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -72,36 +134,255 @@
                                         </td>
                                         <td>
                                             <div class="button">
-                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="file-text"></i></a>
+                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>076 4820 8838</td>
+                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                        <td>
+                                            <span class="badge bg-success">Selesai</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="/kepala/viewpdfdata" class="btn icon btn-outline-secondary"><i data-feather="book-open"></i></a>
+                                                <div class="modal-danger d-inline-block">
+                                                    {{-- button --}}
+                                                    <button class="btn icon btn-outline-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#delete"><i data-feather="trash"></i></button>
+                                                    {{-- modal --}}
+                                                    <div class="modal fade text-left" id="delete" tabindex="-1" role="dialog"
+                                                        aria-labelledby="myModalLabel120" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header bg-danger">
+                                                                    <h5 class="modal-title white" id="myModalLabel120">
+                                                                        Konfirmasi
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Apakah anda yakin ingin menghapus data ini?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-light-secondary"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Close</span>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger ml-1"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Accept</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0500 527693</td>
+                                        <td>fringilla.euismod.enim@quam.ca</td>
+                                        <td>
+                                            <span class="badge bg-secondary">Proses</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>076 4820 8838</td>
+                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                        <td>
+                                            <span class="badge bg-success">Selesai</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="/kepala/viewpdfdata" class="btn icon btn-outline-secondary"><i data-feather="book-open"></i></a>
+                                                <div class="modal-danger d-inline-block">
+                                                    {{-- button --}}
+                                                    <button class="btn icon btn-outline-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#delete"><i data-feather="trash"></i></button>
+                                                    {{-- modal --}}
+                                                    <div class="modal fade text-left" id="delete" tabindex="-1" role="dialog"
+                                                        aria-labelledby="myModalLabel120" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header bg-danger">
+                                                                    <h5 class="modal-title white" id="myModalLabel120">
+                                                                        Konfirmasi
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Apakah anda yakin ingin menghapus data ini?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-light-secondary"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Close</span>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger ml-1"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Accept</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0500 527693</td>
+                                        <td>fringilla.euismod.enim@quam.ca</td>
+                                        <td>
+                                            <span class="badge bg-secondary">Proses</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>076 4820 8838</td>
+                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                        <td>
+                                            <span class="badge bg-success">Selesai</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="/kepala/viewpdfdata" class="btn icon btn-outline-secondary"><i data-feather="book-open"></i></a>
+                                                <div class="modal-danger d-inline-block">
+                                                    {{-- button --}}
+                                                    <button class="btn icon btn-outline-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#delete"><i data-feather="trash"></i></button>
+                                                    {{-- modal --}}
+                                                    <div class="modal fade text-left" id="delete" tabindex="-1" role="dialog"
+                                                        aria-labelledby="myModalLabel120" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header bg-danger">
+                                                                    <h5 class="modal-title white" id="myModalLabel120">
+                                                                        Konfirmasi
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Apakah anda yakin ingin menghapus data ini?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-light-secondary"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Close</span>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger ml-1"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Accept</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0500 527693</td>
+                                        <td>fringilla.euismod.enim@quam.ca</td>
+                                        <td>
+                                            <span class="badge bg-secondary">Proses</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>076 4820 8838</td>
+                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
+                                        <td>
+                                            <span class="badge bg-success">Selesai</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="/kepala/viewpdfdata" class="btn icon btn-outline-secondary"><i data-feather="book-open"></i></a>
+                                                <div class="modal-danger d-inline-block">
+                                                    {{-- button --}}
+                                                    <button class="btn icon btn-outline-danger" data-bs-toggle="modal"
+                                                        data-bs-target="#delete"><i data-feather="trash"></i></button>
+                                                    {{-- modal --}}
+                                                    <div class="modal fade text-left" id="delete" tabindex="-1" role="dialog"
+                                                        aria-labelledby="myModalLabel120" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header bg-danger">
+                                                                    <h5 class="modal-title white" id="myModalLabel120">
+                                                                        Konfirmasi
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Apakah anda yakin ingin menghapus data ini?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-light-secondary"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Close</span>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger ml-1"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Accept</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0500 527693</td>
+                                        <td>fringilla.euismod.enim@quam.ca</td>
+                                        <td>
+                                            <span class="badge bg-secondary">Proses</span>
+                                        </td>
+                                        <td>
+                                            <div class="button">
+                                                <a href="/kepala/viewdata" class="btn icon btn-outline-primary"><i data-feather="edit"></i></a>
 
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="pagination justify-content-end">
-
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination pagination-primary">
-                                        <li class="page-item"><a class="page-link" href="#">
-                                                <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
-                                            </a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">
-                                                <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
-                                            </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
                         </div>
                     </div>
 
                 </section>
             </section>
         </div>
-
     </div>
 </div>
 @endsection

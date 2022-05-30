@@ -36,6 +36,10 @@ Route::get('/admin/viewdata', function () {
 Route::get('/admin/viewpdfdata', function () {
     return view('admin.viewpdfdata');
 });
+Route::get('/admin/users', function () {
+    return view('admin.users');
+});
+
 
 // kepala
 Route::get('/kepala/login', function () {
@@ -53,6 +57,9 @@ Route::get('/kepala/viewdata', function () {
 });
 Route::get('/kepala/validasi', function () {
     return view('kepala.validasi');
+});
+Route::get('/kepala/viewpdfdata', function () {
+    return view('kepala.viewpdfdata');
 });
 
 Route::get('/generate-qrcode', [App\Http\Controllers\QrCodeController::class, 'index']);

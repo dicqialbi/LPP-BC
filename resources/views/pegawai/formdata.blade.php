@@ -165,8 +165,86 @@
                                             </div>
                                             {{-- button --}}
                                             <div class="col-12 d-flex justify-content-end">
-                                                <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
-                                                <button type="reset" class="btn btn-danger me-1 mb-1">Reset</button>
+                                                <div class="modal-success me-1 mb-1 d-inline-block">
+                                                    <!-- Button trigger for Success theme modal -->
+                                                    <button type="button" class="btn btn-outline-success"
+                                                        data-bs-toggle="modal" data-bs-target="#success">
+                                                        Submit
+                                                    </button>
+
+                                                    <!--Success theme Modal -->
+                                                    <div class="modal fade text-left" id="success" tabindex="-1"
+                                                        role="dialog" aria-labelledby="myModalLabel110"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header bg-success">
+                                                                    <h5 class="modal-title white" id="myModalLabel110">
+                                                                        Konfirmasi
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Apakah anda yakin untuk mengajukan surat laporan penindakan tersebut?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button"
+                                                                        class="btn btn-light-secondary"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Close</span>
+                                                                    </button>
+                                                                    <a href="/pegawai/data">
+                                                                        <button type="button" class="btn btn-success ml-1"
+                                                                            data-bs-dismiss="modal">
+                                                                            <i class="bx bx-check d-block d-sm-none"></i>
+                                                                            <span class="d-none d-sm-block">Accept</span>
+                                                                        </button>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-danger me-1 mb-1 d-inline-block">
+                                                    <!-- Button trigger for danger theme modal -->
+                                                    <button type="button" class="btn btn-outline-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#danger">
+                                                        Reset
+                                                    </button>
+
+                                                    <!--Danger theme Modal -->
+                                                    <div class="modal fade text-left" id="danger" tabindex="-1"
+                                                        role="dialog" aria-labelledby="myModalLabel120"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                            role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header bg-danger">
+                                                                    <h5 class="modal-title white" id="myModalLabel120">
+                                                                        Konfirmasi
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Apakah anda yakin akan mengatur ulang semua data?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button"
+                                                                        class="btn btn-light-secondary"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-x d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Close</span>
+                                                                    </button>
+                                                                    <button type="reset" class="btn btn-danger ml-1"
+                                                                        data-bs-dismiss="modal">
+                                                                        <i class="bx bx-check d-block d-sm-none"></i>
+                                                                        <span class="d-none d-sm-block">Accept</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

@@ -14,7 +14,7 @@
         </div>
     </div>
     <script src="{{ url('/')}}/assets/js/app.js"></script>
-
+    <script src="{{ url('/')}}/assets/js/extensions/simple-datatables.js"></script>
     <script src="{{ url('/')}}/assets/js/pages/dashboard.js"></script>
     <script>
         var map = L.map('map').setView([51.505, -0.09], 13);

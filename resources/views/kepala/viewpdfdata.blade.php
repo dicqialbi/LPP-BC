@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('kepala.app')
 
-
-<!-- Mirrored from zuramai.github.io/mazer/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 00:32:30 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan Penindakan</title>
-    <link rel="shortcut icon" href="{{asset('assets/images/logo/logosc.png')}}" type="image/png">
-    <link rel="stylesheet" href="{{ url('/')}}/assets/css/main/app.css">
-</head>
+@section('content')
 
 <body>
     <div class="container">
@@ -25,7 +13,7 @@
                             <header id="invoice-company-details">
                                 <div class="row justify-content-center px-5">
                                     <div class="col-3 text-center">
-                                        <img src="{{asset('assets/images/logo/logo3.png')}}" style=" width:70%">
+                                        <img src="{{asset('assets/images/logo/logo4.png')}}" style=" width:70%">
                                     </div>
                                     <div class="col-5 company-details text-center" style="width: 75%">
                                         <h6 class="name">
@@ -256,7 +244,7 @@
                                 <div class="col invoice-details text-end">
                                     <div class="date">Jember, 12 Mei 2022</div>
                                     <div class="my-2">
-                                        {!!QrCode::size(100)->generate('RemoteStack')!!}
+                                        {!!QrCode::size(100)->color(255,255,255)->backgroundColor(30,30,45)->generate('RemoteStack')!!}
                                     </div>
                                     <div class="text">Kepala Kantor</div>
                                     <div class="text">Asep Munandar</div>
@@ -281,47 +269,8 @@
                     </div>
                 </div>
                 <!-- Invoice Footer -->
-                <div class="modal-success">
-                    <div class="row">
-                        {{-- <a href="/kepala/validasi" class="btn icon btn-primary"><i data-feather="check-square"></i>
-                            VALIDASI</a> --}}
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#success">
-                            SEND VALIDATION
-                        </button>
-                    </div>
-                    <div class="modal fade text-left" id="success" tabindex="-1" role="dialog"
-                        aria-labelledby="myModalLabel110" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header bg-success">
-                                    <h5 class="modal-title white" id="myModalLabel110">
-                                        Konfirmasi
-                                    </h5>
-                                </div>
-                                <div class="modal-body">
-                                    Apakah anda yakin untuk mengirimkan validasi data laporan penindakan?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-light-secondary" data-bs-dismiss="modal">
-                                        <i class="bx bx-x d-block d-sm-none"></i>
-                                        <span class="d-none d-sm-block">Cancel</span>
-                                    </button>
-                                    <a href="/kepala/data">
-                                        <button type="button" class="btn btn-success ml-1" data-bs-dismiss="modal">
-                                            <i class="bx bx-check d-block d-sm-none"></i>
-                                            <span class="d-none d-sm-block">Accept</span>
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/ Invoice Footer -->
             </div>
         </section>
     </div>
-    <script src="{{ url('/')}}/assets/js/app.js"></script>
 </body>
-
-</html>
+@endsection

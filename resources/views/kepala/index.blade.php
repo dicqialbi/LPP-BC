@@ -37,7 +37,7 @@
                             <div class="card-group">
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="card-img-top img-fluid" src="assets/images/samples/1.png"
+                                        <img class="card-img-top img-fluid" src={{asset('assets/images/samples/1.png')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Pelanggaran Cukai</h4>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="card-img-top img-fluid" src="assets/images/samples/2.png"
+                                        <img class="card-img-top img-fluid" src={{asset('assets/images/samples/2.png')}}
                                             alt="Card image cap" />
                                         <div class="card-body">
                                             <h4 class="card-title">Pelanggaran Pabean</h4>
@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="card">
                                     <div class="card-content">
-                                        <img class="card-img-top img-fluid" src="assets/images/samples/3.png"
+                                        <img class="card-img-top img-fluid" src={{asset('assets/images/samples/3.png')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>

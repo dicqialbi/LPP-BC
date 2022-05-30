@@ -13,8 +13,10 @@
         </div>
     </div>
     <script src="{{ url('/')}}/assets/js/app.js"></script>
-
+    <script src="{{ url('/')}}/assets/js/extensions/simple-datatables.js"></script>
     <script src="{{ url('/')}}/assets/js/pages/dashboard.js"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
     <script>
         var map = L.map('map').setView([51.505, -0.09], 13);
     </script>
