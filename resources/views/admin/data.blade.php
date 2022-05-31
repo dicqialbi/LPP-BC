@@ -27,8 +27,11 @@
                             </td>
                             <td>
                                 <div class="button">
-                                    <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i
-                                            data-feather="book-open"></i></a>
+                                    <div class="collapse">
+
+                                        <a href="/admin/viewdata" class="btn icon btn-outline-primary"><i
+                                                data-feather="book-open"></i></a>
+                                    </div>
                                     <div class="modal-danger d-inline-block">
                                         {{-- button --}}
                                         <button class="btn icon btn-outline-danger" data-bs-toggle="modal"

@@ -4,26 +4,23 @@
             <div class="d-flex justify-content-betwen align-items-center">
                 <div class="m-3">
                     <img src="{{asset('assets/images/logo/logo.png')}}" style="height: 50px; width: 35px;">
-                    {{-- <span >Themes</span> --}}
                 </div>
                 <div class="d-flex">
                     <h2 class="mt-3 ml-0" style="font-family: Roboto; font-weight:bolder">SIGAP</h2>
                 </div>
-                {{-- <div class="sidebar-toggler  x">
-                    <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
-                </div> --}}
             </div>
         </div>
         <div class="sidebar-menu">
             <ul class="menu">
                 <li class="sidebar-title">Menu</li>
-                <li class="sidebar-item {{ Request::segment(1) == '/pegawai/dashboard' ? 'active' : '' }} ">
-                    <a href="{{url('/pegawai/dashboard')}}" class='sidebar-link'>
+                <li class="sidebar-item {{ Request::is('pegawai/dashboard') ? 'active' : '' }} ">
+                    <a href='/pegawai/dashboard' class='sidebar-link'>
                         <i class="bi bi-speedometer"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li class="sidebar-item {{ Request::segment(1) == '/pegawai/data' ? 'active' : '' }}">
+                <li
+                    class="sidebar-item {{ Request::is('pegawai/data') || Request::is('pegawai/formdata') || Request::is('pegawai/viewdata')? 'active' : '' }}">
                     <a href='/pegawai/data' class='sidebar-link'>
                         <i class="bi bi-clipboard-data-fill"></i>
                         <span>Data Tangkapan</span>
@@ -133,13 +130,13 @@
                                 <hr class="dropdown-divider">
                                 </li>
                                 <li>
-                                    <div class="dropdown-item modal-danger d-inline-block">
-                                        {{-- button --}}
+                                    {{-- <div class="dropdown-item modal-danger d-inline-block">
+
                                         <div class="row">
                                             <button class="btn icon btn-danger" data-bs-toggle="modal"
                                                 data-bs-target="#logout"><i data-feather="log-out"></i> Log out</button>
                                         </div>
-                                        {{-- modal --}}
+
                                         <div class="modal fade text-left" id="logout" tabindex="-1" role="dialog"
                                             aria-labelledby="myModalLabel120" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
@@ -170,11 +167,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    {{-- <div class="dropdown-item" type="button" href="/pegawai/login">
-                                        <i class="icon-mid bi bi-box-arrow-right me-2">
-                                        </i>Log out
                                     </div> --}}
+
+                                    <div class="dropdown-item">
+                                        <a class="row" href="/pegawai/login">
+                                            <button class="btn icon btn-danger"><i data-feather="log-out"></i>
+                                                Log out</button>
+                                        </a>
+
+                                        {{-- <a href="/pegawai/login">
+                                            <i class="icon-mid bi bi-box-arrow-right me-2">
+                                            </i>Log out
+                                        </a> --}}
+                                    </div>
                                 </li>
                             </ul>
                         </div>

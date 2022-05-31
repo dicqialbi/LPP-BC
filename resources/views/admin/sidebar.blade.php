@@ -17,19 +17,19 @@
         <div class="sidebar-menu">
             <ul class="menu">
                 <li class="sidebar-title">Menu</li>
-                <li class="sidebar-item {{ Request::segment(1) == '/admin/dashboard' ? 'active' : '' }} ">
+                <li class="sidebar-item {{ Request::is('admin/dashboard') ? 'active' : '' }} ">
                     <a href='{{url('/admin/dashboard')}}' class='sidebar-link'>
                         <i class="bi bi-speedometer"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li class="sidebar-item {{ Request::segment(1) == '/admin/data' ? 'active' : '' }}">
+                <li class="sidebar-item {{ Request::is('admin/data') || Request::is('admin/viewdata') ? 'active' : '' }}">
                     <a href='/admin/data' class='sidebar-link'>
                         <i class="bi bi-clipboard-data-fill"></i>
                         <span>Data Tangkapan</span>
                     </a>
                 </li>
-                <li class="sidebar-item {{ Request::segment(1) == '/admin/users' ? 'active' : '' }}">
+                <li class="sidebar-item {{ Request::is('admin/users') ? 'active' : '' }}">
                     <a href='/admin/users' class='sidebar-link'>
                         <i class="bi bi bi-person-lines-fill"></i>
                         <span>Daftar Pengguna</span>
@@ -112,13 +112,13 @@
                                 </li>
                                 <hr class="dropdown-divider">
                                 </li>
-                                <div class="dropdown-item modal-danger d-inline-block">
-                                    {{-- button --}}
+                                {{-- <div class="dropdown-item modal-danger d-inline-block">
+
                                     <div class="row">
                                         <button class="btn icon btn-danger" data-bs-toggle="modal"
                                             data-bs-target="#logout"><i data-feather="log-out"></i> Log out</button>
                                     </div>
-                                    {{-- modal --}}
+
                                     <div class="modal fade text-left" id="logout" tabindex="-1"
                                         role="dialog" aria-labelledby="myModalLabel120"
                                         aria-hidden="true">
@@ -151,12 +151,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                {{-- <li><a class="dropdown-item" type="button" href="/admin/login">
-                                        <i class="icon-mid bi bi-box-arrow-right me-2">
-                                        </i>Logout
+                                </div> --}}
+                                <div class="dropdown-item">
+                                    <a class="row" href="/kepala/login">
+                                        <button class="btn icon btn-danger"><i data-feather="log-out"></i>
+                                            Log out</button>
                                     </a>
-                                </li> --}}
+                                </div>
                             </ul>
                         </div>
                     </div>
