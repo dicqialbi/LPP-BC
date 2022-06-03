@@ -153,7 +153,7 @@
                                     </div>
                                 </div> --}}
                                 <div class="dropdown-item">
-                                    <a class="row" href="/kepala/login">
+                                    <a class="row" href="/admin/login">
                                         <button class="btn icon btn-danger"><i data-feather="log-out"></i>
                                             Log out</button>
                                     </a>
